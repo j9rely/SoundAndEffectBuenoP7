@@ -362,6 +362,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1419152992, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
   m_PrefabInstance: {fileID: 992659761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &392408408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 392408410}
+  - component: {fileID: 392408409}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &392408409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392408408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcfc5d36c6e0904c85a4f49fb7e9f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+--- !u!4 &392408410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392408408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.085693, y: 6.3231106, z: 11.6946125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +833,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd61f67033144549a9a56aa678072fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefabs:
+  - {fileID: 5062920177803007524, guid: a92976f0a0fae9f4da193cd94cf9989c, type: 3}
+  - {fileID: 820549438977072852, guid: b23f084ff23ede8438035d57fd5f9aaf, type: 3}
+  - {fileID: 3626130025831866825, guid: 3c76473f80eee104fa3877bb6260abff, type: 3}
+  - {fileID: 8220461752311273456, guid: 47b50077bf92cb645a71cba1c57735fc, type: 3}
   obstaclePrefab: {fileID: 5062920177803007524, guid: a92976f0a0fae9f4da193cd94cf9989c, type: 3}
 --- !u!4 &1808899101 stripped
 Transform:
@@ -819,6 +869,9 @@ MonoBehaviour:
   dirtParticle: {fileID: 1438565936, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
   gameOver: 0
   explosionParticle: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
+  doubleJumpUsed: 0
+  doubleJumpForce: 15
+  doubleSpeed: 0
 --- !u!65 &1844259721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1111,3 +1164,4 @@ SceneRoots:
   - {fileID: 835818921}
   - {fileID: 173222919}
   - {fileID: 1557435181}
+  - {fileID: 392408410}
